@@ -1,0 +1,350 @@
+<!doctype html>
+<html dir="rtl" lang="he-IL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>filter(2) ,Show On</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--Style-->
+    <link rel="stylesheet" href="lib/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <section class="section-banner">
+        <div class="container-default"></div>
+    </section>
+    <section class="section-filter-show">
+        <div class="container-default">
+            <div class="block-filter">
+                <form action="#" class="form-filter-show" method="post">
+                    <h3 class="title-filter-show white-color">אז איפה בא לך להופיע?</h3>
+                    <div class="fieldboxs">
+                        <div class="form-group">
+                            <label for="district" class="select-show-label">מחוז</label>
+                            <select name="district" class="nice-select custom-select form-control" id="district">
+                                <option value="מרכז">מרכז</option>
+                                <option value="צפון">צפון</option>
+                                <option value="דרום">דרום</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sity" class="select-show-label">עיר</label>
+                            <select name="sity" class="nice-select custom-select form-control" id="sity">
+                                <option value="תל אביב">תל אביב</option>
+                                <option value="פתח תקווה">פתח תקווה</option>
+                                <option value="מודיעין">מודיעין</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="manyPeople" class="select-show-label">כמות מוזמנים</label>
+                            <select name="many-people" class="nice-select custom-select form-control" id="manyPeople">
+                                <option value="0-20">0-20</option>
+                                <option value="20-30">20-30</option>
+                                <option value="40-50">40-50</option>
+                                <option value="+50">+50</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="payment" class="select-show-label">פרטי תשלום להופעה</label>
+                            <select name="payment" class="nice-select custom-select form-control" id="payment">
+                                <option value="גרנטי">גרנטי</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="select-show-label">הגבלת גיל</label>
+                            <select name="age" class="nice-select custom-select form-control" id="age">
+                                <option data-display="18+" value="none" hidden="">18+</option>
+                                <option value="מתחת ל-18">מתחת ל-18</option>
+                                <option value="18+">18+</option>
+                                <option value="21+">21+</option>
+                                <option value="24+">24+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="performance-club" class="select-show-label">סוג המקום</label>
+                            <select name="performance-club" class="nice-select custom-select form-control"
+                                    id="performance-club">
+                                <option value="מועדון הופעות">מועדון הופעות</option>
+                                <option value="בר/פאב">בר/פאב</option>
+                                <option value="מסעדה">מסעדה</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="musicStyle" class="select-show-label">סגנון מוזיקה</label>
+                            <select name="music-style" class="nice-select custom-select form-control" id="musicStyle">
+                                <option value="רוק">רוק</option>
+                                <option value="פאנק">פאנק</option>
+                                <option value="אקוסטי">אקוסטי</option>
+                                <option value="ישראלי">ישראלי</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="event-parameters">
+                        <div class="wrap-advanced-btn">
+                            <a href="#" id="advancedSearchBtn" class="advanced-search-btn">חיפוש מתקדם</a>
+                        </div>
+                        <div class="wrap-btn-submit">
+                            <button type="reset" class="btn btn-reset"></button>
+                            <button type="submit" class="btn btn-submit">מצאו לי מקום להופעה</button>
+                        </div>
+                    </div>
+                    <div class="hidden-parameters">
+                        <div class="parameters-description">דברים נוספים שחשובים לך?</div>
+                        <div class="fieldboxs">
+                            <label for="openStage" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="openStage" value="">
+                                <span class="check-mark"></span>
+                                במה פתוחה
+                            </label>
+
+                            <label for="localAudience" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="localAudience" value checked>
+                                <span class="check-mark"></span>
+                                קהל מקומי
+                            </label>
+
+                            <label for="seats" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="seats" value>
+                                <span class="check-mark"></span>
+                                מקומות ישיבה
+                            </label>
+
+                            <label for="shabbatKeeper" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="shabbatKeeper" value>
+                                <span class="check-mark"></span>
+                                שומר שבת
+                            </label>
+
+                            <label for="accessDisabled" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="accessDisabled" value>
+                                <span class="check-mark"></span>
+                                גישה לנכים
+                            </label>
+
+                            <label for="lunchPerformances" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="lunchPerformances" value>
+                                <span class="check-mark"></span>
+                                הופעות צהריים
+                            </label>
+
+                            <label for="parking" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="parking" value>
+                                <span class="check-mark"></span>
+                                חניה במקום
+                            </label>
+
+                            <label for="equipmentPlace" class="label-checkmark">
+                                <input type="checkbox" class="checkmark" id="equipmentPlace" value>
+                                <span class="check-mark"></span>
+                                ציוד במקום
+                            </label>
+                        </div>
+                        <div class="wrap-btn-submit-hidden">
+                            <button type="reset" class="btn btn-reset"></button>
+                            <button type="submit" class="btn btn-submit">מצאו לי מקום להופעה</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="search-result">
+                <div class="container">
+
+                    <h4 class="title-filter-show">נמצאו <span
+                            class="quantity">129</span> מקומות להופעה שלך!</h4>
+
+                    <ul class="search-list">
+                        <li class="search-list-item">
+                            <div class="card-place">
+                                <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
+                                <div class="card-place-footer">
+                                    <div class="left-content">
+                                        <h4 class="name-place">שם המקום</h4>
+                                        <span class="address-place">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                                             viewBox="0 0 24 32">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>    פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="rating">3.5 <span class="icon-star">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                             viewBox="0 0 32 32">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                        </div>
+                                        <div class="reviews"><span>54</span> ביקורות</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-list-item">
+                            <div class="card-place">
+                                <div class="card-place-body "></div>
+                                <div class="card-place-footer">
+                                    <div class="left-content">
+                                        <h4 class="name-place">שם המקום</h4>
+                                        <span class="address-place">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                                             viewBox="0 0 24 32">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="rating">3.5 <span class="icon-star">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                             viewBox="0 0 32 32">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                        </div>
+                                        <div class="reviews"><span>54</span> ביקורות</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-list-item">
+                            <div class="card-place">
+                                <div class="card-place-body "></div>
+                                <div class="card-place-footer">
+                                    <div class="left-content">
+                                        <h4 class="name-place">שם המקום</h4>
+                                        <span class="address-place">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                                             viewBox="0 0 24 32">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="rating">3.5 <span class="icon-star">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                             viewBox="0 0 32 32">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                        </div>
+                                        <div class="reviews"><span>54</span> ביקורות</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-list-item">
+                            <div class="card-place">
+                                <div class="card-place-body "></div>
+                                <div class="card-place-footer">
+                                    <div class="left-content">
+                                        <h4 class="name-place">שם המקום</h4>
+                                        <span class="address-place">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                                             viewBox="0 0 24 32">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="rating">3.5 <span class="icon-star">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                             viewBox="0 0 32 32">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                        </div>
+                                        <div class="reviews"><span>54</span> ביקורות</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="search-list-item">
+                            <div class="card-place">
+                                <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
+                                <div class="card-place-footer">
+                                    <div class="left-content">
+                                        <h4 class="name-place">שם המקום</h4>
+                                        <span class="address-place">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                                             viewBox="0 0 24 32">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="rating">3.5 <span class="icon-star">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                             viewBox="0 0 32 32">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                        </div>
+                                        <div class="reviews"><span>54</span> ביקורות</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="search-list-item">
+                            <div class="card-place">
+                                <div class="card-place-body "></div>
+                                <div class="card-place-footer">
+                                    <div class="left-content">
+                                        <h4 class="name-place">שם המקום</h4>
+                                        <span class="address-place">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
+                                             viewBox="0 0 24 32">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="rating">3.5 <span class="icon-star">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                             viewBox="0 0 32 32">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                        </div>
+                                        <div class="reviews"><span>54</span> ביקורות</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-load-more">טען עוד</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+<script src="lib/jquery-3.3.1.min.js"></script>
+<script src="lib/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+<script type='text/javascript'>
+    jQuery(document).ready(function () {
+
+        //custom select
+        jQuery('.custom-select').niceSelect();
+
+        $('#advancedSearchBtn').click(function (e) {
+            e.preventDefault();
+            $('.hidden-parameters').animate({opacity: 'toggle'}, 500);
+            $('.advanced-search-btn').toggleClass('event-settings-open');
+            $('.wrap-btn-submit').toggleClass('wrap-btn-submit-active');
+        });
+
+    });
+</script>
+</body>
+</html>
