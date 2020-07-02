@@ -525,6 +525,12 @@ body {
   .card-place-body {
     min-height: 150px;
   }
+  .hidden-parameters .fieldboxs {
+    justify-content: flex-start;
+  }
+  .label-checkmark {
+    flex-basis: 155px;
+  }
 }
 
 @media all and (max-width: 1360px) {
@@ -670,6 +676,7 @@ body {
     margin-left: 0;
     padding-right: 35px;
     margin-bottom: 15px;
+    flex-basis: 200px;
   }
 
   .check-mark {
@@ -723,7 +730,7 @@ body {
 
 }
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 495px) {
   .form-filter-show .form-group {
     width: 100%;
     margin: 0 auto 23px;
@@ -757,6 +764,7 @@ body {
 
   .label-checkmark {
     font-size: 14px;
+    flex-basis: initial;
   }
 }
 
