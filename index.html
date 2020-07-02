@@ -18,7 +18,7 @@
         <div class="container-default"></div>
     </section>
     <section class="section-filter-show">
-        <div class="container-default">
+        <div class="container">
             <div class="block-filter">
                 <form action="#" class="form-filter-show" method="post">
                     <h3 class="title-filter-show white-color">אז איפה בא לך להופיע?</h3>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="event-parameters">
-                            <a href="#" id="advancedSearchBtn" class="advanced-search-btn">חיפוש מתקדם</a>
+                        <a class="advanced-search-btn" href="#" id="advancedSearchBtn">חיפוש מתקדם</a>
                         <div class="wrap-btn-submit">
                             <button type="reset" class="btn btn-reset"></button>
                             <button type="submit" class="btn btn-submit">מצאו לי מקום להופעה</button>
@@ -149,178 +149,258 @@
                 </form>
             </div>
             <div class="search-result">
-                <div class="container">
-
-                    <h4 class="title-filter-show">נמצאו <span
-                            class="quantity">129</span> מקומות להופעה שלך!</h4>
-
-                    <ul class="search-list">
-                        <li class="search-list-item">
-                            <div class="card-place">
-                                <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
-                                <div class="card-place-footer">
-                                    <div class="left-content">
-                                        <h4 class="name-place">שם המקום</h4>
-                                        <span class="address-place">
+                <h4 class="title-filter-show">נמצאו <span
+                        class="quantity">129</span> מקומות להופעה שלך!</h4>
+                <div class="banner">
+                    <img alt="banner" class="banner-img" src="assets/banner.png">
+                </div>
+                <ul class="search-list">
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
                                              viewBox="0 0 24 32">
                                             <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
                                         </svg>    פתח תקווה, שמואל הנביא 2
                                     </span>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="rating">3.5 <span class="icon-star">
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                              viewBox="0 0 32 32">
                                             <title>star-full</title>
                                             <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
                                         </svg>
                                     </span>
-                                        </div>
-                                        <div class="reviews"><span>54</span> ביקורות</div>
                                     </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="search-list-item">
-                            <div class="card-place">
-                                <div class="card-place-body "></div>
-                                <div class="card-place-footer">
-                                    <div class="left-content">
-                                        <h4 class="name-place">שם המקום</h4>
-                                        <span class="address-place">
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body "></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
                                              viewBox="0 0 24 32">
                                             <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
                                         </svg>פתח תקווה, שמואל הנביא 2
                                     </span>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="rating">3.5 <span class="icon-star">
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                              viewBox="0 0 32 32">
                                             <title>star-full</title>
                                             <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
                                         </svg>
                                     </span>
-                                        </div>
-                                        <div class="reviews"><span>54</span> ביקורות</div>
                                     </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="search-list-item">
-                            <div class="card-place">
-                                <div class="card-place-body "></div>
-                                <div class="card-place-footer">
-                                    <div class="left-content">
-                                        <h4 class="name-place">שם המקום</h4>
-                                        <span class="address-place">
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body "></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
                                              viewBox="0 0 24 32">
                                             <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
                                         </svg>פתח תקווה, שמואל הנביא 2
                                     </span>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="rating">3.5 <span class="icon-star">
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                              viewBox="0 0 32 32">
                                             <title>star-full</title>
                                             <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
                                         </svg>
                                     </span>
-                                        </div>
-                                        <div class="reviews"><span>54</span> ביקורות</div>
                                     </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="search-list-item">
-                            <div class="card-place">
-                                <div class="card-place-body "></div>
-                                <div class="card-place-footer">
-                                    <div class="left-content">
-                                        <h4 class="name-place">שם המקום</h4>
-                                        <span class="address-place">
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body "></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
                                              viewBox="0 0 24 32">
                                             <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
                                         </svg>פתח תקווה, שמואל הנביא 2
                                     </span>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="rating">3.5 <span class="icon-star">
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                              viewBox="0 0 32 32">
                                             <title>star-full</title>
                                             <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
                                         </svg>
                                     </span>
-                                        </div>
-                                        <div class="reviews"><span>54</span> ביקורות</div>
                                     </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
                                 </div>
                             </div>
-                        </li>
-
-                        <li class="search-list-item">
-                            <div class="card-place">
-                                <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
-                                <div class="card-place-footer">
-                                    <div class="left-content">
-                                        <h4 class="name-place">שם המקום</h4>
-                                        <span class="address-place">
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
                                              viewBox="0 0 24 32">
                                             <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
                                         </svg>פתח תקווה, שמואל הנביא 2
                                     </span>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="rating">3.5 <span class="icon-star">
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                              viewBox="0 0 32 32">
                                             <title>star-full</title>
                                             <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
                                         </svg>
                                     </span>
-                                        </div>
-                                        <div class="reviews"><span>54</span> ביקורות</div>
                                     </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="search-list-item">
-                            <div class="card-place">
-                                <div class="card-place-body "></div>
-                                <div class="card-place-footer">
-                                    <div class="left-content">
-                                        <h4 class="name-place">שם המקום</h4>
-                                        <span class="address-place">
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body "></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="32"
                                              viewBox="0 0 24 32">
                                             <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
                                         </svg>פתח תקווה, שמואל הנביא 2
                                     </span>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="rating">3.5 <span class="icon-star">
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                              viewBox="0 0 32 32">
                                             <title>star-full</title>
                                             <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
                                         </svg>
                                     </span>
-                                        </div>
-                                        <div class="reviews"><span>54</span> ביקורות</div>
                                     </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <a href="#" class="btn-load-more">טען עוד</a>
-                </div>
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body "></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
+                                        <svg height="32" version="1.1" viewBox="0 0 24 32" width="24"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
+                                        <svg height="32" version="1.1" viewBox="0 0 32 32" width="32"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                    </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body" style="background-image: url(assets/test-img.jpg);"></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
+                                        <svg height="32" version="1.1" viewBox="0 0 24 32" width="24"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
+                                        <svg height="32" version="1.1" viewBox="0 0 32 32" width="32"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                    </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-list-item">
+                        <div class="card-place">
+                            <div class="card-place-body "></div>
+                            <div class="card-place-footer">
+                                <div class="left-content">
+                                    <h4 class="name-place">שם המקום</h4>
+                                    <span class="address-place">
+                                        <svg height="32" version="1.1" viewBox="0 0 24 32" width="24"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0c-6.617 0-12 5.394-12 12.022 0 9.927 11.201 19.459 11.678 19.86 0.093 0.079 0.208 0.118 0.322 0.118s0.226-0.038 0.318-0.114c0.477-0.394 11.682-9.762 11.682-19.864 0-6.628-5.383-12.022-12-12.022zM12.002 30.838c-1.841-1.645-11.002-10.259-11.002-18.816 0-6.078 4.935-11.022 11-11.022s11 4.944 11 11.022c0 8.702-9.152 17.193-10.998 18.816zM12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zM12 17c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>פתח תקווה, שמואל הנביא 2
+                                    </span>
+                                </div>
+                                <div class="right-content">
+                                    <div class="rating">3.5 <span class="icon-star">
+                                        <svg height="32" version="1.1" viewBox="0 0 32 32" width="32"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <title>star-full</title>
+                                            <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path>
+                                        </svg>
+                                    </span>
+                                    </div>
+                                    <div class="reviews"><span>54</span> ביקורות</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="banner"></div>
+                <a class="btn-load-more" href="#">טען עוד</a>
             </div>
         </div>
     </section>
