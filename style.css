@@ -524,9 +524,15 @@ body {
   .search-list {
     max-width: 1200px;
   }
+
+  .hidden-parameters .fieldboxs {
+    justify-content: flex-start;
+  }
+
   .label-checkmark {
     flex-basis: 180px;
   }
+
   .form-filter-show {
     padding-left: 100px;
     padding-right: 100px;
@@ -541,11 +547,6 @@ body {
   .card-place-body {
     min-height: 150px;
   }
-
-  .hidden-parameters .fieldboxs {
-    justify-content: flex-start;
-  }
-
 }
 
 @media all and (max-width: 1360px) {
@@ -580,9 +581,11 @@ body {
     padding-left: 28px;
     padding-right: 28px;
   }
+
   .label-checkmark {
     flex-basis: 160px;
   }
+
   .search-list-item {
     padding-left: 8px;
     padding-right: 8px;
@@ -650,6 +653,9 @@ body {
   .rating,
   .name-place {
     font-size: 12px;
+  }
+  .label-checkmark {
+    flex-basis: 157px;
   }
 }
 
@@ -771,7 +777,6 @@ body {
   }
 
 
-
   .card-place-body {
     min-height: 112px;
   }
@@ -784,9 +789,11 @@ body {
     padding-top: 13px;
     padding-bottom: 13px;
   }
- .wrap-btn-submit-hidden {
+
+  .wrap-btn-submit-hidden {
     padding-top: 5px;
   }
+
   .label-checkmark {
     font-size: 14px;
     flex-basis: initial;
@@ -828,9 +835,11 @@ body {
     min-width: auto;
     font-size: 14px;
   }
+
   .form-filter-show .form-group {
     margin-bottom: 14px;
   }
+
   .label-checkmark {
     width: 100%;
   }
